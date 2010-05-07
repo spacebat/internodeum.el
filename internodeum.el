@@ -443,6 +443,6 @@ Returns t when polling was active, nil otherwise."
   (message ""))
 
 
-(provide 'internode-mum)
-;;; internode-mum.el ends here
+(provide 'internodeum)
+;;; internodeum.el ends here
 
