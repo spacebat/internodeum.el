@@ -1,3 +1,6 @@
 internodeum.el - An Internode ISP Usage Meter in Emacs Lisp
 
 Implemented as a learning exercise for using GNU Emacs as a HTTP client and XML parser.
+
+Author: Andrew Kirkpatrick
+Licence: LGPL (see source file)
