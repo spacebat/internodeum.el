@@ -40,14 +40,15 @@
 ;; put data on the mode line
 ;; make the mode line data configurable with a format string
 ;; use defcustom
-;; background polling
 ;; logging
-;; combine credentials-files and -priority add an option to obtain them from the environment
+;; combine credentials-files and -priority
+;; (add an option to obtain them from the environment)
 ;; make paranoia boolean; unset after the last fetch
 ;; or drop paranoia altogether... this is emacs and we're all friends
 ;; do some date math on the rollover
 ;; graph something? :)
 ;; make sure buffers are not left lying around
+;; make polling wait until Emacs has been idle a while
 
 ;;; Usage:
 
@@ -61,8 +62,15 @@
 ;; of username and password like credentials in these files will be taken as
 ;; your Internode login details. Not very satisfactory I know.
 
-;; Once you have the credentials set, you might want to set the poll interval,
-;; which defaults to 30 minutes.
+;; Its recommended that you check usage manually, with either of the interactive
+;; commands: internodeum/usage-summary and internodeum/short-usage-summary
+
+;; While polling seems more convenient, its also a pain when you're busy doing
+;; something and Emacs blocks your input while it makes a series of HTTP requests
+;; to update your usage.
+
+;; If you do want to use polling, once you have the credentials set you might
+;; want to set the poll interval, which defaults to 30 minutes.
 
 ;; (setq internodeum/poll-interval (* 60 60)) ; 1 hour
 
